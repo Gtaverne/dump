@@ -18,14 +18,16 @@ int main ()
 {
     
 unsigned int i = -167;
-char *str = NULL;
+char *str = "meh";
 int *ptr;
 
 ptr = NULL;
 printf("mes variables\n i:%d    ---  str: %s    ---et--- ptr:%p\n", i, str, ptr);
-printf("A la mano :\nHoho%.cMotherfucker\n", 'c');
-ft_printf("A la ftpf :\nHoho%cMotherfucker\n", 'c');
+printf("A la mano :\npouic:%0*.*s----\n", 15, 1, str);
+ft_printf("A la ftpf :\npouic:%0*.*s----\n", 15, 1 , str);
 
+
+/*
 printf("_____________\n");
 printf("Test du zéro :\nHoho%05dMotherfucker\n", i);
 ft_printf("ft, test du zéro :\nHoho%05dMotherfucker\n", i);
@@ -130,5 +132,5 @@ printf("_____________\n");
 
 ft_printf("Ma copie, sur un pourcent : %% et la bite à dudule\n");
 printf("L'original printf : %% et la bite à dudule\n");
-
+*/
 }
